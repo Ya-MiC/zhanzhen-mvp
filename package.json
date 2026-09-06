@@ -1,0 +1,32 @@
+{
+  "name": "@zhanzhen/dsh-local-office",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Zhanzhen local-first Docs and Sheets workspace for DeepSeek Harness",
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js"
+    },
+    "./client": {
+      "types": "./lib/client/index.d.ts",
+      "import": "./lib/client.js"
+    }
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "immediately": false
+    }
+  },
+  "scripts": {
+    "build": "echo 'Build adapter must be aligned to the installed DSH release before publishing.'",
+    "test": "node --test tests/persistence.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
