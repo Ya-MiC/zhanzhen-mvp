@@ -1,5 +1,5 @@
 {
-  "name": "@zhanzhen/dsh-local-office",
+  "name": "@yamic/zhanzhen-office",
   "version": "0.1.0",
   "private": true,
   "description": "Zhanzhen local-first Docs and Sheets workspace for DeepSeek Harness",
